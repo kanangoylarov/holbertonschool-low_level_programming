@@ -1,0 +1,23 @@
+#include "main.h"
+#include <stdio.h>
+/**
+ * jack_bauer - Prints every minute of the day of
+ *              Jack Bauer, starting from 00:00 to 23:59.
+ */
+void times_table(void)
+{
+
+	int i, j;
+
+	for (i = 0; i <= 10; i++)
+	{
+	int a = 0;
+
+	for (j = 0; j <= 10; j++)
+	{
+		a += i;
+		putchar((char) a);
+	}
+	putchar('\n');
+	}
+}
