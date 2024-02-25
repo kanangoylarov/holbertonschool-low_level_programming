@@ -11,7 +11,6 @@
  */
 int _islower(int c)
 {
-	int q = islower(c);
-	_putchar(q + '0');
+	_putchar((char)islower((char)c));
 	return (0);
 }
