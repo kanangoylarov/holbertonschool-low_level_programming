@@ -25,4 +25,5 @@ int main(void)
 		else
 			printf("Buzz");
 	}
+	return (0);
 }
