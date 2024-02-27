@@ -20,10 +20,10 @@ int main(void)
 		}
 		else if ((i % 3 == 0))
 		{
-			printf("Fizz");
+			printf("Fizz ");
 		}
 		else
-			printf("Buzz");
+			printf("Buzz ");
 	}
 	return (0);
 }
