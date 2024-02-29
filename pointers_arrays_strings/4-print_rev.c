@@ -12,10 +12,10 @@ void print_rev(char *s)
 	char *z = s;
 	int l = 0;
 
-	while (*z++)
+	while (*z != '\0')
 		l++;
-	z -= l;
-	while (l + 2 > 0)
+	--l;
+	while (l >= 0)
 	{
 		_putchar(z[l]);
 		l--;
