@@ -14,6 +14,7 @@ void print_rev(char *s)
 
 	while (*z++)
 		l++;
+	--l;
 
 	while (l >= 0)
 	{
