@@ -1,4 +1,3 @@
-#include "main.h"
 /**
  * strcat - Concatenates the string
  *          null byte, to the end of the string pointed to by @dest.
