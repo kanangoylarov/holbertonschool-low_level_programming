@@ -4,13 +4,13 @@
  *
  * @s: Is variable
  *
- * Return - Variable
+ * Return: Variable
  */
 int _atoi(char *s)
 {
 	int l = 0;
 	int isare = 1;
-	int son = 0;
+	unsigned int son = 0;
 
 	while (*(s + l) != 0)
 	{
