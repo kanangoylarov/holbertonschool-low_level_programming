@@ -16,7 +16,7 @@ void rev_string(char *s)
 	{
 		l++;
 	}
-	
+
 	while (a < (l / 2))
 	{
 		tmp = son[l - 1 - a];
