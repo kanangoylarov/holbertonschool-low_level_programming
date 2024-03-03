@@ -20,7 +20,7 @@ int _strcmp(char *s1, char *s2)
 		}
 		a++;
 	}
-	if (*s1 == *s2)
+	if (s1[a] == s2[a])
 		return (0);
 	else if (*(s1 + a + 1) == 0)
 		return (-67);
