@@ -12,7 +12,6 @@ char *_strstr(char *haystack, char *needle)
 {
 	int a = 0;
 	int b = 0;
-	int c = 0;
 	int d = 0;
 
 	while (*(needle + d))
@@ -22,22 +21,16 @@ char *_strstr(char *haystack, char *needle)
 	{
 		if (haystack[a] == needle[b])
 		{
-			c++;
-			break;
+			while (*(needle + b))
+			{
+				if (needle[b] != haystack[a + b])
+					break;
+                        	b++;
+			}
+			if (b == d)
+				return ((haystack + a));
 		}
 		a++;
 	}
-	if (c == 1)
-	{
-		while (*(needle + b))
-		{
-			if (needle[b] != haystack[a + b])
-				break;
-			b++;
-		}
-	}
-	if (b == d)
-		return (haystack + a);
-
 	return ('\0');
 }
