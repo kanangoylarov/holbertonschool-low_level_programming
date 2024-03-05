@@ -9,26 +9,12 @@
 char *_strchr(char *s, char c)
 {
 	int a = 0;
-	int b = 0;
-	int c = 0;
 
 	while (*(s + a))
+	{
+		if (s[a] == c)
+			return (s + a);
 		a++;
-	while (*(s + b))
-	{
-		if (s[b] == c)
-		{
-			break;
-		}
-		b++;
 	}
-	if (a == b)
-		return (0);
-	for (; b <= a; b++)
-	{
-		s[c] == s[b];
-		c++;
-	}
-	s[c + 1] = 0;
-	return (s);
+	return ('\0');
 }
