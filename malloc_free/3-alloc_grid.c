@@ -15,6 +15,10 @@ int **alloc_grid(int width, int height)
 	int i, j;
 	int **twod;
 
+	if (width == 0)
+	{
+		return (NULL);
+	}
 	twod = (int **)malloc(height * sizeof(int *));
 	if (twod == NULL)
 	{
