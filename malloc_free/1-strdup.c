@@ -23,7 +23,7 @@ char *_strdup(char *str)
 		return (NULL);
 	for (index = 0; index < len; index++)
 		dublicate[index] = str[index];
-	dublicate[len] ='\0';
+	dublicate[len] = '\0';
 	return (dublicate);
 
 }
