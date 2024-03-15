@@ -15,14 +15,14 @@ int **alloc_grid(int width, int height)
 	int i, j;
 	int **twod;
 
-	twod = (int**)malloc(height * sizeof(int*));
+	twod = (int **)malloc(height * sizeof(int *));
 	if (twod == NULL)
 	{
 		return (NULL);
 	}
 	for (i = 0; i < height; i++)
 	{
-		twod[i] = (int*) malloc(width * sizeof(int));
+		twod[i] = (int *) malloc(width * sizeof(int));
 		if (twod[i] == NULL)
 		{
 			for (; i >= 0; i--)
