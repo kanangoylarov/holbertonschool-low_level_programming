@@ -3,9 +3,8 @@
 /**
  * print_dog - definitiooo.
  *
- * @*d: is pointer to variables.
+ * @d: is pointer to variables.
  *
- * Returns: Always is 0.
  */
 void print_dog(struct dog *d)
 {
