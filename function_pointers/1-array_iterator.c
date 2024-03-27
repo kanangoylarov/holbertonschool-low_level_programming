@@ -1,4 +1,4 @@
-#include "funtions_pointers.h"
+#include "function_pointers.h"
 /* array_iterator - Is function in c.
  * @array: is array.
  * @size: is length of element.
@@ -8,8 +8,8 @@ void array_iterator(int *array, size_t size, void (*action)(int))
 {
 	int i;
 
-	for (i = 0; i < size; i++)
+	for (i = 0; i < (int)size; i++)
 	{
-		(*action)(int array[i]);
+		action(array[i]);
 	}
 }
