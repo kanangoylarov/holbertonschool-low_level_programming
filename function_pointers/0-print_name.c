@@ -1,6 +1,6 @@
 #include "function_pointers.h"
 /*
- *print_name - Is function in c.
+ * print_name - Is function in c.
  *
  *@name: Get name form main.
  *
