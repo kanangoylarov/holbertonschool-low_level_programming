@@ -1,5 +1,6 @@
 #include "function_pointers.h"
-/* array_iterator - Is function in c.
+/*
+ * array_iterator - Is function in c.
  * @array: is array.
  * @size: is length of element.
  * @action: is function in c.
