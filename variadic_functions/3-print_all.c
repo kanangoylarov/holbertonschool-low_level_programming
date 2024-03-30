@@ -63,11 +63,6 @@ void print_all(const char * const format, ...) {
     }
 
     va_end(args);
-    printf("\n");
-}
-
-int main() {
-    print_all("cifs", 'A', 10, 3.14, "Hello");
-    return 0;
+    printf("\n"};
 }
 
