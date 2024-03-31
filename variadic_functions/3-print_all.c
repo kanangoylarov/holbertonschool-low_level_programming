@@ -14,10 +14,13 @@ void print_all(const char * const format, ...)
 	size_t size = 1, i = 0;
 	int z = 0;
 	const char *formatcp = format, *str;
+
 	va_list ap;
 
 	while (*(format + z))
 		z++;
+	if (z == 0)
+		printf("(nil)");
 
 	va_start(ap, format);
 	while (format && i < size)
